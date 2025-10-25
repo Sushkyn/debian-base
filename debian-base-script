@@ -3,7 +3,7 @@
 #it is just uhh... different strokes. omarchy-steam-install is the goat.
 
 #packages
-apt install net-tools nnn curl transmission-qt mpv simplescreenrecorder git libnotify-bin vim fastfetch suckless-tools i3 tor torsocks doas tmux macchanger flatpak tlp tlp-rdw xorg
+apt install -y net-tools nnn curl transmission-qt mpv simplescreenrecorder git libnotify-bin vim fastfetch suckless-tools i3 tor torsocks doas tmux macchanger flatpak tlp tlp-rdw xorg
 
 #privilege
 echo "permit nopass debian as root" >> /etc/doas.conf
