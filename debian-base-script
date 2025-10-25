@@ -20,6 +20,8 @@ echo "exec i3" > ~/.xinitrc
 mv config/99-swapiness.conf /etc/sysctl.d/
 mv config/irssi ~/irssi
 mv config/.Xresources ~/
+mv config/.vimrc ~/
+
 #do xrdb -merge ~/.Xresources  in xterm
 cp -r config/* ~/.config/
 wget -qO /etc/hosts https://github.com/StevenBlack/hosts/raw/refs/heads/master/alternates/fakenews-gambling-porn-social/hosts && sed -i -e 's/#.*0.0.0.0/0.0.0.0/g' /etc/hosts
