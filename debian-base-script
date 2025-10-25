@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "it is just uhh... different strokes"
+
+#packages
+apt install net-tools ranger curl pcmanfm-qt transmission-qt mpv simplescreenrecorder git libnotify-bin vim fastfetch figlet cowsay cmatrix suckless-tools i3 tor torsocks doas tmux macchanger flatpak tlp xorg
+figlet "pretty darn amazing waow"
+
+#privilege
+echo "permit nopass debian as root" >> /etc/doas.conf
+echo "alias sudo='doas'" >> ~/.bashrc
+source ~/.bashrc
+
+#desktop
+echo "exec i3" > ~/.xinitrc
+
+#config
+mv config/99-swapiness.conf /etc/sysctl.d/
+cp -r config/* ~/.config/
