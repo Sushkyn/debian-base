@@ -18,6 +18,7 @@ echo "exec i3" > ~/.xinitrc
 
 #config
 mv config/99-swapiness.conf /etc/sysctl.d/
+mv config/irssi ~/irssi
 cp -r config/* ~/.config/
 wget -qO /etc/hosts https://github.com/StevenBlack/hosts/raw/refs/heads/master/alternates/fakenews-gambling-porn-social/hosts && sed -i -e 's/#.*0.0.0.0/0.0.0.0/g' /etc/hosts
 echo -e "nameserver 9.9.9.9\nnameserver 149.112.112.112" | sudo tee /etc/resolv.conf > /dev/null
