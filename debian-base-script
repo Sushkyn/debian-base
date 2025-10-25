@@ -17,10 +17,10 @@ echo "alias sudo='doas'" >> ~/.bashrc
 echo "exec i3" > ~/.xinitrc
 
 #config
-mv config/99-swapiness.conf /etc/sysctl.d/
-mv config/.irssi ~/
-mv config/.vimrc ~/
-mv config/.Xresources ~/
+mv 99-swapiness.conf /etc/sysctl.d/
+mv .irssi ~/
+mv .vimrc ~/
+mv .Xresources ~/
 #do xrdb -merge ~/.Xresources  in xterm
 
 systemctl enable tlp
@@ -29,4 +29,3 @@ wget -qO /etc/hosts https://github.com/StevenBlack/hosts/raw/refs/heads/master/a
 chattr -i /etc/resolv.conf
 echo -e "nameserver 9.9.9.9\nnameserver 149.112.112.112" | tee /etc/resolv.conf > /dev/null
 chattr +i /etc/resolv.conf
-
