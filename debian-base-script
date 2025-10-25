@@ -10,7 +10,6 @@ echo "permit nopass debian as root" >> /etc/doas.conf
 chown root:root /etc/doas.conf
 chmod 0400 /etc/doas.conf
 echo "alias sudo='doas'" >> ~/.bashrc
-source ~/.bashrc
 
 #desktop
 echo "exec i3" > ~/.xinitrc
