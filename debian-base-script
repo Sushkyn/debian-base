@@ -4,7 +4,6 @@
 
 #packages
 apt install net-tools nnn curl transmission-qt mpv simplescreenrecorder git libnotify-bin vim fastfetch suckless-tools i3 tor torsocks doas tmux macchanger flatpak tlp tlp-rdw xorg
-figlet "pretty darn amazing waow"
 
 #privilege
 echo "permit nopass debian as root" >> /etc/doas.conf
