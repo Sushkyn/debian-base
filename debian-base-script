@@ -7,7 +7,7 @@ apt install -y iwd net-tools nnn curl transmission-qt mpv simplescreenrecorder g
 
 #privilege
 echo -e 'permit nopass localhost as root
-nopass localhost as root cmd /usr/bin/macchanger
+permit nopass localhost as root cmd /usr/bin/macchanger
 permit nopass localhost as root cmd /sbin/ip' >/etc/doas.conf
 chown root:root /etc/doas.conf
 chmod 0400 /etc/doas.conf
