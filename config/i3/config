@@ -177,3 +177,9 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+#monitors
+exec xrandr --output HDMI-1-0 --mode 1920x1080 --rate 120 --right-of eDP-1 
+#mac address
+exec --no-startup-id bash -c "sleep 5 && doas ip link set wlan0 down && doas macchanger -r wlan0 && doas ip link set wlan0 up"
+
