@@ -3,7 +3,7 @@
 echo "it is just uhh... different strokes"
 
 #packages
-apt install net-tools ranger curl pcmanfm-qt transmission-qt mpv simplescreenrecorder git libnotify-bin vim fastfetch figlet cowsay cmatrix suckless-tools i3 tor torsocks doas tmux macchanger flatpak tlp xorg
+apt install net-tools nnn curl pcmanfm-qt transmission-qt mpv simplescreenrecorder git libnotify-bin vim fastfetch figlet cowsay cmatrix suckless-tools i3 tor torsocks doas tmux macchanger flatpak tlp xorg
 figlet "pretty darn amazing waow"
 
 #privilege
