@@ -8,6 +8,7 @@
 	let mapleader=" "
 	let maplocalleader=" "
 
+	set term=xterm-256color
 	set title
 	set background=dark
 	set go=ac
