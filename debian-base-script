@@ -6,7 +6,7 @@
 apt install -y iwd net-tools nnn curl transmission-qt mpv simplescreenrecorder git libnotify-bin vim fastfetch suckless-tools i3 tor torsocks doas tmux macchanger flatpak tlp tlp-rdw xorg
 
 #privilege
-echo -e 'permit nopass localhost as root permit 
+echo -e 'permit nopass localhost as root
 nopass localhost as root cmd /usr/bin/macchanger
 permit nopass localhost as root cmd /sbin/ip' >/etc/doas.conf
 chown root:root /etc/doas.conf
